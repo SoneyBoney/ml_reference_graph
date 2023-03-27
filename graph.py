@@ -53,5 +53,21 @@ maxout_network = G.add_ref(
     parents=[dropout],
 )
 
+# Batch Norm
+batch_norm = G.add_ref(
+    title="Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+    link="arxiv.org/abs/1502.03167",
+)
+
+# Layer Norm
+layer_norm = G.add_ref(
+    title="Layer Normalization", link="arxiv.org/abs/1607.06450", parents=[batch_norm]
+)
+
+# Batch Norm
+batch_norm = G.add_ref(
+    title="Group Normalization", link="arxiv.org/abs/1803.08494", parents=[batch_norm]
+)
+
 
 nx.drawing.nx_pydot.write_dot(G.graph, "test.dot")
