@@ -14,3 +14,4 @@ https://graphviz.org/download/
 python3 graph.py
 dot -Tsvg test.dot -o test.svg
 ```
+Then open the .svg file in a browser
