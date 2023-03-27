@@ -9,4 +9,8 @@ Organized into a graph for visualization.
 ## dot
 https://graphviz.org/download/ 
 
-
+# Generating Graph
+```
+python3 graph.py
+dot -Tsvg test.dot -o test.svg
+```
