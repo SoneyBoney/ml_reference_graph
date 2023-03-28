@@ -39,10 +39,14 @@ class MyGraph:
 
 G = MyGraph()
 
+# CS231n
+cs231n = G.add_ref(title="CS231n", link="cs231n.github.io/", desc="Solid introduction.")
+
 # Dropout
 dropout = G.add_ref(
     title="Dropout- A Simple Way to Prevent Neural Networks from Overfitting",
     link="www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf",
+    parents=[cs231n],
 )
 
 # Maxout Networks
@@ -57,6 +61,7 @@ maxout_network = G.add_ref(
 batch_norm = G.add_ref(
     title="Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift",
     link="arxiv.org/abs/1502.03167",
+    parents=[cs231n],
 )
 
 # Layer Norm
@@ -70,11 +75,17 @@ group_norm = G.add_ref(
 )
 
 # Alpaca
-alpaca = G.add_ref(title="Alpaca- A Strong, Replicable Instruction-Following Model",link="crfm.stanford.edu/2023/03/13/alpaca.html")
+alpaca = G.add_ref(
+    title="Alpaca- A Strong, Replicable Instruction-Following Model",
+    link="crfm.stanford.edu/2023/03/13/alpaca.html",
+)
 
 # Self-Instruct
-self_instruct = G.add_ref(title="Self-Instruct- Aligning Language Model with Self Generated Instructions",link="arxiv.org/abs/2212.10560",parents=[alpaca])
-
+self_instruct = G.add_ref(
+    title="Self-Instruct- Aligning Language Model with Self Generated Instructions",
+    link="arxiv.org/abs/2212.10560",
+    parents=[alpaca],
+)
 
 
 nx.drawing.nx_pydot.write_dot(G.graph, "test.dot")
