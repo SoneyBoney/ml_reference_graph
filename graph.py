@@ -77,6 +77,8 @@ group_norm = G.add_ref(
     title="Group Normalization", link="arxiv.org/abs/1803.08494", parents=[batch_norm]
 )
 
+#####################################################################################################################
+
 # Alpaca
 alpaca = G.add_ref(
     title="Alpaca- A Strong, Replicable Instruction-Following Model",
@@ -91,5 +93,9 @@ self_instruct = G.add_ref(
     parents=[alpaca],
 )
 
+#####################################################################################################################
+
+# Geometric Deep Learning
+geometric_deep_learning = G.add_ref(title="Geometric Deep Learning- Grids, Groups, Graphs, Geodesics, and Gauges", link="arxiv.org/abs/2104.13478")
 
 nx.drawing.nx_pydot.write_dot(G.graph, "test.dot")
