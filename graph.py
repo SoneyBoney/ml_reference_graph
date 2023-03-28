@@ -64,10 +64,17 @@ layer_norm = G.add_ref(
     title="Layer Normalization", link="arxiv.org/abs/1607.06450", parents=[batch_norm]
 )
 
-# Batch Norm
-batch_norm = G.add_ref(
+# Group Norm
+group_norm = G.add_ref(
     title="Group Normalization", link="arxiv.org/abs/1803.08494", parents=[batch_norm]
 )
+
+# Alpaca
+alpaca = G.add_ref(title="Alpaca- A Strong, Replicable Instruction-Following Model",link="crfm.stanford.edu/2023/03/13/alpaca.html")
+
+# Self-Instruct
+self_instruct = G.add_ref(title="Self-Instruct- Aligning Language Model with Self Generated Instructions",link="arxiv.org/abs/2212.10560",parents=[alpaca])
+
 
 
 nx.drawing.nx_pydot.write_dot(G.graph, "test.dot")
