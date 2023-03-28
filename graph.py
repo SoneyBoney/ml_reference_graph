@@ -47,6 +47,7 @@ dropout = G.add_ref(
     title="Dropout- A Simple Way to Prevent Neural Networks from Overfitting",
     link="www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf",
     parents=[cs231n],
+    desc="Big regularization."
 )
 
 # Maxout Networks
@@ -62,11 +63,13 @@ batch_norm = G.add_ref(
     title="Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift",
     link="arxiv.org/abs/1502.03167",
     parents=[cs231n],
+    desc="Stabilizes training, more robust to initial conditions"
 )
 
 # Layer Norm
 layer_norm = G.add_ref(
-    title="Layer Normalization", link="arxiv.org/abs/1607.06450", parents=[batch_norm]
+    title="Layer Normalization", link="arxiv.org/abs/1607.06450", parents=[batch_norm],
+    desc="Batchnorm sucks when batchsize is small; enter layer norm"
 )
 
 # Group Norm
@@ -78,6 +81,7 @@ group_norm = G.add_ref(
 alpaca = G.add_ref(
     title="Alpaca- A Strong, Replicable Instruction-Following Model",
     link="crfm.stanford.edu/2023/03/13/alpaca.html",
+    desc="Fine turning llama w/ GPT"
 )
 
 # Self-Instruct
