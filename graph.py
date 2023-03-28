@@ -54,7 +54,7 @@ dropout = G.add_ref(
 maxout_network = G.add_ref(
     title="Maxout Networks",
     link="arxiv.org/abs/1302.4389",
-    desc="Dropout but more",
+    desc="Max of layer after masking; better gradient flow for deeper networks.",
     parents=[dropout],
 )
 
