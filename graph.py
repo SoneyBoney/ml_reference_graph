@@ -54,7 +54,7 @@ dropout = G.add_ref(
 maxout_network = G.add_ref(
     title="Maxout Networks",
     link="arxiv.org/abs/1302.4389",
-    desc="Max of layer after masking; better gradient flow for deeper networks.",
+    desc="Max of layer after masking; better gradient flow for deeper networks; maxout unit linear almost everywhere",
     parents=[dropout],
 )
 
@@ -77,6 +77,32 @@ group_norm = G.add_ref(
     title="Group Normalization", link="arxiv.org/abs/1803.08494", parents=[batch_norm]
 )
 
+#####################################################################################################################
+# Conv 
+kaiming_init_conv = G.add_ref(
+    title="Delving Deep into Rectifiers- Surpassing Human-Level Performance on ImageNet Classification",
+    link="arxiv.org/abs/1502.01852",
+    desc="Kaiming Initialization",
+    parents=[cs231n]
+)
+
+resnet = G.add_ref(
+    title="Deep Residual Learning for Image Recognition",
+    link="arxiv.org/abs/1512.03385",
+    parents=[cs231n]
+)
+
+dense_net = G.add_ref(
+    title="Densely Connected Convolutional Networks",
+    link="arxiv.org/abs/1608.06993",
+    parents=[resnet]
+)
+
+highway_net = G.add_ref(
+    title="Highway Networks",
+    link="arxiv.org/abs/1505.00387",
+    parents=[resnet]
+)
 #####################################################################################################################
 
 # Alpaca
