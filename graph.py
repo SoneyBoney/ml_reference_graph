@@ -103,6 +103,20 @@ highway_net = G.add_ref(
     link="arxiv.org/abs/1505.00387",
     parents=[resnet]
 )
+
+saliency_maps = G.add_ref(
+    title="Deep Inside Convolutional Networks- Visualising Image Classification Models and Saliency Maps",
+    link="arxiv.org/abs/1312.6034",
+    desc="Saliency Maps",
+    parents=[cs231n]
+)
+
+fooling_iamges = G.add_ref(
+    title="Intriguing properties of neural networks",
+    link="arxiv.org/abs/1312.6199",
+    desc="Fooling images",
+    parents=[saliency_maps]
+)
 #####################################################################################################################
 
 # Alpaca
