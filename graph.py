@@ -118,6 +118,15 @@ fooling_iamges = G.add_ref(
     parents=[saliency_maps]
 )
 #####################################################################################################################
+# RNNs
+training_RNNs = G.add_ref(
+    title="TRAINING RECURRENT NEURAL NETWORKS",
+    link="www.cs.utoronto.ca/~ilya/pubs/ilya_sutskever_phd_thesis.pdf",
+    desc="Ilya Sutskever's dissertation",
+    parents=[cs231n]
+)
+
+#####################################################################################################################
 
 # Alpaca
 alpaca = G.add_ref(
@@ -134,7 +143,13 @@ self_instruct = G.add_ref(
 )
 
 #####################################################################################################################
+# Distributed Stuff
+large_scale_distributed_deep_networks = G.add_ref(
+    title="Large Scale Distributed Deep Networks",
+    link="papers.nips.cc/paper/2012/file/6aca97005c68f1206823815f66102863-Paper.pdf",
+)       
 
+#####################################################################################################################
 # Geometric Deep Learning
 geometric_deep_learning = G.add_ref(title="Geometric Deep Learning- Grids, Groups, Graphs, Geodesics, and Gauges", link="arxiv.org/abs/2104.13478")
 
