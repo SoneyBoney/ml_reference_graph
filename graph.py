@@ -127,6 +127,34 @@ training_RNNs = G.add_ref(
 )
 
 #####################################################################################################################
+# Attention
+bahdanau_attention = G.add_ref(
+    title="NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+    link="arxiv.org/pdf/1409.0473.pdf",
+    desc="First paper to introduce attention mechanism",
+)   
+
+luong_attention = G.add_ref(
+    title="Effective Approaches to Attention-based Neural Machine Translation",
+    link="arxiv.org/pdf/1508.04025.pdf",
+    desc="Multiplicative Attention",
+    parents=[bahdanau_attention],
+)   
+
+self_attention = G.add_ref(
+    title="Long Short-Term Memory-Networks for Machine Reading",
+    link="arxiv.org/pdf/1601.06733.pdf",
+    desc="Self-Attention Introduction",
+    parents=[bahdanau_attention],
+)   
+
+image_captioning_attention = G.add_ref(
+    title="Show, Attend and Tell- Neural Image Caption Generation with Visual Attention",
+    link="arxiv.org/pdf/1502.03044.pdf",
+    desc="Image captioning with attention",
+    parents=[bahdanau_attention],
+)   
+#####################################################################################################################
 
 # Alpaca
 alpaca = G.add_ref(
