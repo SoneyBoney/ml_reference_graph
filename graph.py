@@ -127,11 +127,20 @@ training_RNNs = G.add_ref(
 )
 
 #####################################################################################################################
+# NLP 
+neural_machine_translation = G.add_ref(
+    title="Sequence to Sequence Learning with Neural Networks",
+    link="arxiv.org/pdf/1409.3215.pdf",
+    desc="Neural machine translation",
+)
+
+#####################################################################################################################
 # Attention
 bahdanau_attention = G.add_ref(
     title="NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
     link="arxiv.org/pdf/1409.0473.pdf",
     desc="First paper to introduce attention mechanism",
+    parents=[neural_machine_translation],
 )   
 
 luong_attention = G.add_ref(
