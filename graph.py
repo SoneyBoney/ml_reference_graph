@@ -165,19 +165,19 @@ image_captioning_attention = G.add_ref(
 )   
 #####################################################################################################################
 
-# Alpaca
-alpaca = G.add_ref(
-    title="Alpaca- A Strong, Replicable Instruction-Following Model",
-    link="crfm.stanford.edu/2023/03/13/alpaca.html",
-    desc="Fine turning llama w/ GPT"
-)
-
 # Self-Instruct
 self_instruct = G.add_ref(
     title="Self-Instruct- Aligning Language Model with Self Generated Instructions",
     link="arxiv.org/abs/2212.10560",
-    parents=[alpaca],
 )
+# Alpaca
+alpaca = G.add_ref(
+    title="Alpaca- A Strong, Replicable Instruction-Following Model",
+    link="crfm.stanford.edu/2023/03/13/alpaca.html",
+    desc="Fine turning llama w/ GPT",
+    parents=[self_instruct],
+)
+
 
 #####################################################################################################################
 # Distributed Stuff
