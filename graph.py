@@ -131,7 +131,7 @@ training_RNNs = G.add_ref(
 neural_machine_translation = G.add_ref(
     title="Sequence to Sequence Learning with Neural Networks",
     link="arxiv.org/pdf/1409.3215.pdf",
-    desc="Neural machine translation",
+    desc="Neural machine translation/ Encoder-decoder arch",
 )
 
 #####################################################################################################################
