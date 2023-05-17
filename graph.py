@@ -164,6 +164,16 @@ image_captioning_attention = G.add_ref(
     parents=[bahdanau_attention],
 )   
 #####################################################################################################################
+# Generative Models
+
+sim_clr = G.add_ref(
+    title="A Simple Framework for Contrastive Learning of Visual Representations",
+    link="arxiv.org/pdf/2002.05709.pdf",
+    desc="Self Supervised Learning pretraining for images",
+    parents=[cs231n],
+)
+
+#####################################################################################################################
 
 # Self-Instruct
 self_instruct = G.add_ref(
