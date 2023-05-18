@@ -92,6 +92,12 @@ resnet = G.add_ref(
     parents=[cs231n]
 )
 
+efficient_net = G.add_ref(
+    title="EfficientNet- Rethinking Model Scaling for Convolutional Neural Networks",
+    link="arxiv.org/pdf/1905.11946.pdf",
+    parents=[resnet],
+)
+
 dense_net = G.add_ref(
     title="Densely Connected Convolutional Networks",
     link="arxiv.org/abs/1608.06993",
