@@ -95,6 +95,7 @@ resnet = G.add_ref(
 efficient_net = G.add_ref(
     title="EfficientNet- Rethinking Model Scaling for Convolutional Neural Networks",
     link="arxiv.org/pdf/1905.11946.pdf",
+    desc="How to scale conv nets",
     parents=[resnet],
 )
 
