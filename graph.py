@@ -99,6 +99,20 @@ efficient_net = G.add_ref(
     parents=[resnet],
 )
 
+efficient_net_v2 = G.add_ref(
+    title="EfficientNetV2- Smaller Models and Faster Training",
+    link="arxiv.org/abs/2104.00298",
+    desc="Efficient net but better?",
+    parents=[efficient_net],
+)
+
+squeeze_net = G.add_ref(
+    title="SqueezeNet- AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size",
+    link="arxiv.org/abs/1602.07360",
+    desc="Super small conv nets",
+    parents=[efficient_net],
+)
+
 dense_net = G.add_ref(
     title="Densely Connected Convolutional Networks",
     link="arxiv.org/abs/1608.06993",
