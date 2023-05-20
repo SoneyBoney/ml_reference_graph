@@ -184,15 +184,6 @@ image_captioning_attention = G.add_ref(
     desc="Image captioning with attention",
     parents=[bahdanau_attention],
 )   
-#####################################################################################################################
-# Generative Models
-
-sim_clr = G.add_ref(
-    title="A Simple Framework for Contrastive Learning of Visual Representations",
-    link="arxiv.org/pdf/2002.05709.pdf",
-    desc="Self Supervised Learning pretraining for images",
-    parents=[cs231n],
-)
 
 #####################################################################################################################
 
@@ -209,6 +200,22 @@ alpaca = G.add_ref(
     parents=[self_instruct],
 )
 
+
+#####################################################################################################################
+# Self-supervised learning
+
+ssl_cookbook = G.add_ref(
+    title="A Cookbook of Self-Supervised Learning",
+    link="arxiv.org/pdf/2304.12210.pdf",
+    desc="Good stuff",
+)
+
+sim_clr = G.add_ref(
+    title="A Simple Framework for Contrastive Learning of Visual Representations",
+    link="arxiv.org/pdf/2002.05709.pdf",
+    desc="Self Supervised Learning pretraining for images",
+    parents=[cs231n,ssl_cookbook],
+)
 
 #####################################################################################################################
 # Distributed Stuff
