@@ -224,6 +224,13 @@ large_scale_distributed_deep_networks = G.add_ref(
     link="papers.nips.cc/paper/2012/file/6aca97005c68f1206823815f66102863-Paper.pdf",
 )       
 
+revisiting_distributed_sgd = G.add_ref(
+    title="REVISITING DISTRIBUTED SYNCHRONOUS SGD",
+    link="arxiv.org/pdf/1604.00981.pdf",
+    desc="clever idea- drop slowest b stragglers. poisson dist has thin tails.",
+    parents=[large_scale_distributed_deep_networks],
+)   
+
 #####################################################################################################################
 # Geometric Deep Learning
 geometric_deep_learning = G.add_ref(title="Geometric Deep Learning- Grids, Groups, Graphs, Geodesics, and Gauges", link="arxiv.org/abs/2104.13478")
