@@ -78,6 +78,21 @@ group_norm = G.add_ref(
 )
 
 #####################################################################################################################
+# Misc cs231n
+shallow_mimic = G.add_ref(
+    title="Do Deep Nets Really Need to be Deep?",
+    link="arxiv.org/pdf/1312.6184.pdf",
+    desc="Shallow mimic nets achieving comparable test accuracy",
+    parents=[cs231n],
+)
+
+one_vs_all = G.add_ref(
+    title="In Defense of One-Vs-All Classification",
+    link="www.jmlr.org/papers/volume5/rifkin04a/rifkin04a.pdf",
+    parents=[cs231n],
+)
+
+#####################################################################################################################
 # Conv 
 kaiming_init_conv = G.add_ref(
     title="Delving Deep into Rectifiers- Surpassing Human-Level Performance on ImageNet Classification",
