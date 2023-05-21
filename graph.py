@@ -218,6 +218,14 @@ image_captioning_attention = G.add_ref(
     parents=[bahdanau_attention],
 )   
 
+transformers = G.add_ref(
+    title="Attention Is All You Need",
+    link="arxiv.org/pdf/1706.03762.pdf",
+    desc="The transformers paper",
+    parents=[bahdanau_attention,luong_attention],
+)  
+
+
 #####################################################################################################################
 
 # Self-Instruct
