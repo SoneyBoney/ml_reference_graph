@@ -86,6 +86,13 @@ one_vs_all = G.add_ref(
     parents=[cs231n],
 )
 
+loss_surfaces =  G.add_ref(
+    title="The Loss Surfaces of Multilayer Networks",
+    link="arxiv.org/pdf/1412.0233.pdf",
+    desc="bad local minima becomes exponentially less likely as network size increases",
+    parents=[cs231n],
+)
+
 #####################################################################################################################
 # Student-teacher networks
 
