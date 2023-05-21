@@ -101,6 +101,13 @@ kaiming_init_conv = G.add_ref(
     parents=[cs231n]
 )
 
+google_net = G.add_ref(
+    title="Going deeper with convolutions",
+    link="arxiv.org/pdf/1409.4842.pdf",
+    desc="Inception net / googLeNet",
+    parents=[cs231n]
+)
+
 resnet = G.add_ref(
     title="Deep Residual Learning for Image Recognition",
     link="arxiv.org/abs/1512.03385",
