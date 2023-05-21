@@ -79,6 +79,16 @@ group_norm = G.add_ref(
 
 #####################################################################################################################
 # Misc cs231n
+
+one_vs_all = G.add_ref(
+    title="In Defense of One-Vs-All Classification",
+    link="www.jmlr.org/papers/volume5/rifkin04a/rifkin04a.pdf",
+    parents=[cs231n],
+)
+
+#####################################################################################################################
+# Student-teacher networks
+
 shallow_mimic = G.add_ref(
     title="Do Deep Nets Really Need to be Deep?",
     link="arxiv.org/pdf/1312.6184.pdf",
@@ -86,10 +96,11 @@ shallow_mimic = G.add_ref(
     parents=[cs231n],
 )
 
-one_vs_all = G.add_ref(
-    title="In Defense of One-Vs-All Classification",
-    link="www.jmlr.org/papers/volume5/rifkin04a/rifkin04a.pdf",
-    parents=[cs231n],
+fitnets = G.add_ref(
+    title="FITNETS HINTS FOR THIN DEEP NETS",
+    link="arxiv.org/pdf/1412.6550.pdf",
+    desc="Teacher guided deeper but thinner student nets",
+    parents=[shallow_mimic],
 )
 
 #####################################################################################################################
@@ -239,6 +250,13 @@ sim_clr = G.add_ref(
     parents=[cs231n,ssl_cookbook],
 )
 
+ffcv = G.add_ref(
+    title="Fast Forward Computer Vision",
+    link="github.com/libffcv/ffcv",
+    desc="'train models at a fraction of the cost with accelerated data loading!'",
+    parents=[ssl_cookbook],
+)
+
 #####################################################################################################################
 # Distributed Stuff
 large_scale_distributed_deep_networks = G.add_ref(
@@ -252,6 +270,20 @@ revisiting_distributed_sgd = G.add_ref(
     desc="clever idea- drop slowest b stragglers. poisson dist has thin tails.",
     parents=[large_scale_distributed_deep_networks],
 )   
+
+fairscale = G.add_ref(
+    title="FairScale",
+    link="github.com/facebookresearch/fairscale",
+    desc="pytorch extension from Facebook for scaling",
+    parents=[ssl_cookbook, large_scale_distributed_deep_networks],
+)  
+
+nvidia_apex = G.add_ref(
+    title="NVIDIA Apex",
+    link="github.com/NVIDIA/apex",
+    desc="Distributed training from NVIDIA",
+    parents=[ssl_cookbook, large_scale_distributed_deep_networks],
+) 
 
 #####################################################################################################################
 # Geometric Deep Learning
